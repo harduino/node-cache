@@ -98,6 +98,10 @@ function Cache () {
     }
     return null;
   };
+  
+  this.exists = function(key) {
+    return this.get(key) !== null;
+  };
 
   this.size = function() {
     return _size;
